@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.supercompany.miragecodir.ihm;
 
 import javax.swing.JPanel;
 
 /**
- * Définit une JPanel permettant de scinder les informations en deux parties
+ * Défini une JPanel permettant de scinder les informations en deux parties
  * @author FlorianDELSOL
  */
 public class Contenu extends javax.swing.JPanel {

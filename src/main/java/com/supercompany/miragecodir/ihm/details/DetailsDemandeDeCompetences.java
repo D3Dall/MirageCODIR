@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.supercompany.miragecodir.ihm.details;
 
 import com.supercompany.miragecodir.ihm.popup.ConfirmationPopUp;
 import com.supercompany.miragecodir.ihm.popup.ErrorPopUp;
 import fr.jaschavolp.m1.jee.mirageshared.dmdcompetences.DmdCompetencesVM;
-import fr.jaschavolp.m1.jee.mirageshared.shared.exceptions.IdentifiantInvalideException;
 import fr.jaschavolp.m1.jee.mirageshared.shared.services.ServicesCODIRRemote;
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -1,17 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.supercompany.miragecodir.service;
 
-import java.util.Properties;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import fr.jaschavolp.m1.jee.mirageshared.shared.services.ServicesCODIRRemote;
 
 /**
- *
+ * Structure un service RMI pour l'interaction entre le serveur et un client MIA-CODIR
  * @author FlorianDELSOL
  */
 public class RMICODIRClientService {
@@ -20,14 +14,20 @@ public class RMICODIRClientService {
     private InitialContext ctx;
     private ServicesCODIRRemote remoteSvc;
     
+    /**
+     * Créer une nouvelle instance
+     * @throws NamingException 
+     */
     public RMICODIRClientService () throws NamingException{
         this.ctx = new InitialContext();
         remoteSvc = (ServicesCODIRRemote) ctx.lookup(URI);
     }
 
+    /**
+     * @return le service permettant la communication avec le serveur
+     */
     public ServicesCODIRRemote getDabRemoteSvc() {
         return remoteSvc;
     }
-
     
 }
