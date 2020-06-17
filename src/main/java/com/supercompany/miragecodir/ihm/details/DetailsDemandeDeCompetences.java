@@ -48,8 +48,8 @@ public class DetailsDemandeDeCompetences extends javax.swing.JPanel {
             
             this.jLabelCompetencesData.setText(competences);
             
-            this.jLabelActifData.setText(data.getNomFichePoste() != null ? "En cours de recrutement" : data.getValidationCODIR() != null && data.getValidationCODIR() ? "Validée par le CODIR" : "En cours de traitement");
-            this.jButtonValiderDemandeCompetence.setEnabled(!data.getValidationCODIR());
+            this.jLabelActifData.setText(data.getNomFichePoste() != null ? "En cours de recrutement ou assouvie" : data.getValidationCODIR() != null && data.getValidationCODIR() ? "Validée par le CODIR" : "En cours de traitement");
+            this.jButtonValiderDemandeCompetence.setEnabled(data.getValidationCODIR() == null || !data.getValidationCODIR());
         }
     }
 

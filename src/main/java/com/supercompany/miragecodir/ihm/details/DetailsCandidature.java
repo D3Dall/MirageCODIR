@@ -38,7 +38,7 @@ public class DetailsCandidature extends javax.swing.JPanel {
     
     private void actualize(){
         if(data != null){
-            jLabelCandIdentifiantData.setText(data.getIdentifiant().toString());
+            jLabelIdentifiantData.setText(data.getIdentifiant().toString());
             jLabelLettreDeMotivationData.setText(data.getLettreMotivation());
             jLabelCandIdentifiantData.setText(data.getDetailsCandidat().getIdentifiant().toString());
             jLabelCandIdentiteeData.setText(data.getDetailsCandidat().getPrenom() + data.getDetailsCandidat().getNom().toUpperCase() );
